@@ -21,13 +21,13 @@ validator always {
 }
 
 validator alwaysW {
-    withdraw(r: Redeemer, c: Credential, tx: Transaction) -> Bool{
+    withdraw(_r: Redeemer, _c: Credential, _tx: Transaction) -> Bool{
         True
     }
 }
 
 validator vstingTokens {
-    mint(r: Redeemer, p: PolicyId, tx: Transaction) -> Bool {
+    mint(_r: Redeemer, p: PolicyId, tx: Transaction) -> Bool {
         let Transaction {outputs, ..} = tx
 
         expect Some(_ownOut) = 
@@ -38,7 +38,7 @@ validator vstingTokens {
         True
     }
 
-    spend(d: Option<Datum>, r: Redeemer, oref: OutputReference, tx: Transaction) -> Bool{
+    spend(_d: Option<Datum>, _r: Redeemer, _oref: OutputReference, _tx: Transaction) -> Bool{
         True
     }
 

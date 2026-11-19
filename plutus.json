@@ -12,7 +12,7 @@
   },
   "validators": [
     {
-      "title": "always.always.mint",
+      "title": "always/always.always.mint",
       "redeemer": {
         "title": "_r",
         "schema": {
@@ -23,7 +23,7 @@
       "hash": "7caa107893fff6846db8e4981e4d4cac2342d794931e1b4e84cfd08d"
     },
     {
-      "title": "always.always.spend",
+      "title": "always/always.always.spend",
       "datum": {
         "title": "d",
         "schema": {
@@ -40,7 +40,7 @@
       "hash": "7caa107893fff6846db8e4981e4d4cac2342d794931e1b4e84cfd08d"
     },
     {
-      "title": "always.always.else",
+      "title": "always/always.always.else",
       "redeemer": {
         "schema": {}
       },
@@ -48,9 +48,9 @@
       "hash": "7caa107893fff6846db8e4981e4d4cac2342d794931e1b4e84cfd08d"
     },
     {
-      "title": "always.alwaysW.withdraw",
+      "title": "always/always.alwaysW.withdraw",
       "redeemer": {
-        "title": "r",
+        "title": "_r",
         "schema": {
           "$ref": "#/definitions/cardano~1transaction~1Redeemer"
         }
@@ -59,7 +59,7 @@
       "hash": "4ab26c95029067185f709d140300cccb15b0b20bbd62a7e9aa2e2e10"
     },
     {
-      "title": "always.alwaysW.else",
+      "title": "always/always.alwaysW.else",
       "redeemer": {
         "schema": {}
       },
@@ -67,9 +67,9 @@
       "hash": "4ab26c95029067185f709d140300cccb15b0b20bbd62a7e9aa2e2e10"
     },
     {
-      "title": "always.vstingTokens.mint",
+      "title": "always/always.vstingTokens.mint",
       "redeemer": {
-        "title": "r",
+        "title": "_r",
         "schema": {
           "$ref": "#/definitions/cardano~1transaction~1Redeemer"
         }
@@ -78,15 +78,15 @@
       "hash": "704a59d05e64740e0cb03c9887152df5199137320e91bbf49bf81d54"
     },
     {
-      "title": "always.vstingTokens.spend",
+      "title": "always/always.vstingTokens.spend",
       "datum": {
-        "title": "d",
+        "title": "_d",
         "schema": {
           "$ref": "#/definitions/cardano~1transaction~1Datum"
         }
       },
       "redeemer": {
-        "title": "r",
+        "title": "_r",
         "schema": {
           "$ref": "#/definitions/cardano~1transaction~1Redeemer"
         }
@@ -95,7 +95,7 @@
       "hash": "704a59d05e64740e0cb03c9887152df5199137320e91bbf49bf81d54"
     },
     {
-      "title": "always.vstingTokens.else",
+      "title": "always/always.vstingTokens.else",
       "redeemer": {
         "schema": {}
       },
